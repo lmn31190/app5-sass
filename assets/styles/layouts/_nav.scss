@@ -1,0 +1,52 @@
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+
+    li{
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 0.9rem;
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s ease;
+        padding: 20px 0;
+
+        &:first-child{
+            color: $purple;
+        }
+
+        &:first-child::before{
+            content: "";
+            position: absolute;
+            transform: translateY(-20px);
+            width: 100%;
+            height: 4px;
+            background: $purple;
+        }
+
+        &:hover::before{
+            content: "";
+            position: absolute;
+            transform: translateY(-20px);
+            width: 100%;
+            height: 4px;
+            background: $purple;
+
+        }
+        &:last-child:before {
+            display: none;
+        }
+    }
+
+    #language{
+        background: $grey;
+        padding: 7px 15px;
+        border-radius: 50px;
+    }
+  }
+}

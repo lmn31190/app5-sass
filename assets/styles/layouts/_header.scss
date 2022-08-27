@@ -1,0 +1,38 @@
+header{
+    background: url(../img/bg.jpg) center/cover fixed;
+    height: 80vh;
+
+    .main-header{
+
+        #logo{
+            padding: 95px 0 0;
+
+            img{
+                width: 800px;
+            }
+        }
+
+        h1{
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 45px;
+        }
+
+        button{
+            font-size: 1.5rem;
+            @include button;
+
+            i{
+                transform: translateX(5px);
+            }
+        }
+    }
+}
+
+.header-text{
+    height: 14vh;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
